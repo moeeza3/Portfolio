@@ -1,5 +1,178 @@
+@use "colors";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.main {
+  .navbar {
+    background: colors.$primaryColor !important;
+    &-brand,
+    .nav-link {
+      color: colors.$secondaryColor !important;
+    }
+    &-brand-container {
+      flex: 1;
+    }
+
+    .navbar-brand {
+      // background: colors.$smallBgColor !important;
+      background: linear-gradient(to bottom, #b4494f, colors.$smallBgColor);
+      color: colors.$secondaryColor !important;
+      padding: 0.5rem 1rem;
+    }
+
+    &-list {
+      flex: 1;
+
+      .navbar-nav {
+        .nav-item {
+          margin: 0 1rem !important;
+        }
+      }
+    }
+  }
+  .hero {
+    background: colors.$primaryColor !important;
+    // height: 100vh;
+    padding: 10% 0;
+    .hero-container {
+      height: 100% !important;
+      .hero-row {
+        height: 100% !important;
+
+        .hero-name {
+          font-family: colors.$poppins !important;
+          font-weight: 600 !important;
+          color: colors.$importantColor !important;
+        }
+
+        p {
+          color: colors.$secondaryColor !important;
+          span {
+            color: colors.$importantColor !important;
+          }
+        }
+
+        .resume {
+          // background: colors.$primaryColor !important;
+          color: colors.$secondaryColor !important;
+          border: 2px solid colors.$importantColor;
+          // border: none;
+          font-family: colors.$railway !important;
+          background: linear-gradient(
+            to bottom,
+            colors.$primaryColor,
+            colors.$primaryColor1
+          );
+          box-shadow: 0px 0px 20px 0px #f2f2f220;
+        }
+      }
+    }
+  }
+
+  // About Section
+
+  .about {
+    background: colors.$primaryColor1 !important;
+    color: colors.$secondaryColor !important;
+    width: 100%;
+    padding: 10% 0;
+    // height: 100vh !important;
+    .about-container {
+      .about-col {
+        .about-img {
+          width: 500px;
+          height: 450px;
+          object-fit: cover;
+          .img-fluid {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .about-info {
+          .about-text {
+            line-height: 2rem;
+            color: colors.$secondaryColor1 !important;
+            font-family: colors.$railway;
+            font-weight: 400;
+          }
+          .about-social {
+            width: 100%;
+            .about-social-text {
+              border-right: 2px solid colors.$secondaryColor1;
+              border-left: 2px solid colors.$secondaryColor1;
+              color: #00b4d8;
+            }
+            .about-icon {
+              width: 50px;
+              height: 50px;
+              color: colors.$secondaryColor;
+              background: linear-gradient(
+                to bottom,
+                colors.$primaryColor,
+                colors.$primaryColor1
+              );
+              box-shadow: 0px 0px 20px 0px #f2f2f220;
+              border-radius: 10px;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              -o-border-radius: 10px;
+              //border: 1px solid colors.$secondaryColor1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //common
+  .about-header,
+  .education-header {
+    font-family: colors.$poppins !important;
+    font-weight: 100 !important;
+    letter-spacing: 1px;
+    h1 {
+      color: colors.$importantColor !important;
+    }
+  }
+
+  .education {
+    background: colors.$primaryColor1;
+    padding: 10% 0;
+    .education-detail {
+      .educations {
+        width: 350px;
+        height: 300px;
+        color: colors.$secondaryColor;
+        background: linear-gradient(
+          to bottom,
+          colors.$primaryColor,
+          colors.$primaryColor1
+        );
+        // box-shadow: 0px 0px 20px 0px #f2f2f220;
+
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+      .education-icon {
+        width: 60px;
+        height: 60px;
+
+        .svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
