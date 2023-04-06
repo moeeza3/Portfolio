@@ -75,12 +75,14 @@
   // About Section
 
   .about {
-    background: colors.$primaryColor1 !important;
+    background: colors.$primaryColor1;
     color: colors.$secondaryColor !important;
     width: 100%;
-    padding: 10% 0;
+    // padding: 10% 0;
+
     // height: 100vh !important;
     .about-container {
+      padding: 5% 0;
       .about-col {
         .about-img {
           width: 500px;
@@ -134,10 +136,12 @@
 
   //common
   .about-header,
-  .education-header {
+  .education-header,
+  .skills-header {
     font-family: colors.$poppins !important;
     font-weight: 100 !important;
     letter-spacing: 1px;
+
     h1 {
       color: colors.$importantColor !important;
     }
@@ -145,24 +149,52 @@
 
   .education {
     background: colors.$primaryColor1;
-    padding: 10% 0;
+    padding: 5% 0;
     .education-detail {
+      margin: 1rem 0;
       .educations {
         width: 350px;
         height: 300px;
         color: colors.$secondaryColor;
-        background: linear-gradient(
-          to bottom,
-          colors.$primaryColor,
-          colors.$primaryColor1
-        );
+        // background: linear-gradient(
+        //   to bottom,
+        //   colors.$primaryColor,
+        //   colors.$primaryColor1
+        // );
+        background: linear-gradient(45deg, rgb(30, 32, 36), rgb(35, 39, 43));
         // box-shadow: 0px 0px 20px 0px #f2f2f220;
-
+        box-shadow: rgb(28, 30, 34) 10px 10px 19px 0px,
+          rgb(38, 42, 46) -10px -10px 19px 0px;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        .date {
+          color: colors.$secondaryColor1;
+        }
+        .program1 {
+          color: #ef476f !important;
+        }
+        .program2 {
+          color: #06d6a0;
+        }
+        .program3 {
+          color: #00b4d8;
+        }
+        .institute {
+          color: colors.$importantColor;
+        }
+        .program {
+          font-weight: 600;
+          font-family: colors.$poppins;
+          letter-spacing: 1px;
+        }
+        .date,
+        .institute {
+          font-weight: 500;
+          font-family: colors.$railway;
+        }
       }
       .education-icon {
         width: 60px;
@@ -173,6 +205,118 @@
           height: 100%;
         }
       }
+    }
+  }
+
+  .skills {
+    background: colors.$primaryColor;
+    padding: 5% 0;
+    .skills-container {
+      .skills-header {
+        .div {
+          width: 100px;
+          height: 100px;
+          background: #b4494f;
+        }
+      }
+      .skills-detail {
+        .common {
+          margin: 1rem 0;
+          .skill-container {
+            margin: 1rem 0;
+            .skill-cont {
+              margin-bottom: 0.5rem;
+            }
+          }
+          .common-text {
+            color: colors.$secondaryColor;
+            font-family: colors.$poppins;
+            font-weight: 300;
+          }
+          .skill-text,
+          .skill-percent {
+            font-family: colors.$railway;
+            color: colors.$secondaryColor1;
+          }
+          .skill-bar {
+            width: 100%;
+            height: 10px;
+            // background: #00b4d8;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            background: #212428;
+            box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.4588235294),
+              inset -8px -8px 16px rgba(56, 62, 69, 0.4588235294);
+
+            .skill-progress {
+              background: linear-gradient(
+                145deg,
+                colors.$importantColor 0%,
+                colors.$smallBgColor 100%
+              );
+              // width: 90%;
+              height: 10px;
+              border-radius: 10px;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              -o-border-radius: 10px;
+            }
+            .html-skill,
+            .css-skill {
+              // width: 0%;
+              // width: 90%;
+              // animation: htmlAnim 3s;
+              // -webkit-animation: htmlAnim 3s;
+              // animation-delay: 5s;
+              // animation-iteration-count: infinite;
+            }
+            // @keyframes htmlAnim {
+            //   0% {
+            //     width: 0%;
+            //   }
+            //   90% {
+            //     width: 80%;
+            //   }
+            // }
+          }
+        }
+      }
+      // .html {
+      //   .skill-bar {
+      //     background-color: #ddd;
+      //     width: 20px;
+      //     height: 100%;
+      //     display: flex;
+      //     align-items: flex-end;
+
+      //     .html-skill {
+      //       height: 90%;
+      //       width: 20px;
+      //       background-color: #04aa6d;
+      //     } /* Green */
+      //   }
+      // }
+      // .skill {
+      //   width: 120px;
+      //   height: 120px;
+      //   background: linear-gradient(45deg, rgb(30, 32, 36), rgb(35, 39, 43));
+
+      //   box-shadow: rgb(28, 30, 34) 10px 10px 19px 0px,
+      //     rgb(38, 42, 46) -10px -10px 19px 0px;
+      //   border-radius: 10px;
+      //   .logo {
+      //     width: 100%;
+      //     .skill-icons {
+      //     }
+      //   }
+      //   .percent {
+      //     color: colors.$importantColor;
+      //   }
+      // }
     }
   }
 }

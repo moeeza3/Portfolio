@@ -7,15 +7,17 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { RxLink1 } from "react-icons/rx";
+import Education from "./Education";
+import Skills from "./Skills";
 const About = () => {
   return (
     <>
       <div className="about">
         <div className="about-container container-md container-fluid">
-          <div className="about-header">
+          <div className="about-header mb-3">
             <h1 className="display-4 text-center">About Me</h1>
           </div>
-          <div className="about-col d-flex py-4">
+          <div className="about-col d-flex ">
             <div className="col">
               <div className="about-img">
                 <Image
@@ -56,6 +58,8 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Education />
+        <Skills />
       </div>
     </>
   );
