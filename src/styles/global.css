@@ -73,7 +73,7 @@
 }
 .main .about .about-container .about-col .about-info .about-text {
   line-height: 2rem;
-  color: #848484 !important;
+  color: hsl(0, 0%, 52%) !important;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
@@ -81,8 +81,8 @@
   width: 100%;
 }
 .main .about .about-container .about-col .about-info .about-social .about-social-text {
-  border-right: 2px solid #848484;
-  border-left: 2px solid #848484;
+  border-right: 2px solid hsl(0, 0%, 52%);
+  border-left: 2px solid hsl(0, 0%, 52%);
   color: #00b4d8;
 }
 .main .about .about-container .about-col .about-info .about-social .about-icon {
@@ -132,19 +132,19 @@
   -o-border-radius: 10px;
 }
 .main .education .education-detail .educations .date {
-  color: #848484;
+  color: hsl(0, 0%, 52%);
 }
 .main .education .education-detail .educations .program1 {
-  color: #ef476f !important;
+  color: #f06c50 !important;
 }
 .main .education .education-detail .educations .program2 {
-  color: #06d6a0;
+  color: #f06c50;
 }
 .main .education .education-detail .educations .program3 {
-  color: #00b4d8;
+  color: #f06c50;
 }
 .main .education .education-detail .educations .institute {
-  color: #e27c61;
+  color: hsl(0, 0%, 52%);
 }
 .main .education .education-detail .educations .program {
   font-weight: 600;
@@ -190,7 +190,7 @@
 .main .skills .skills-container .skills-detail .common .skill-text,
 .main .skills .skills-container .skills-detail .common .skill-percent {
   font-family: "Raleway", sans-serif;
-  color: #848484;
+  color: hsl(0, 0%, 52%);
 }
 .main .skills .skills-container .skills-detail .common .skill-bar {
   width: 100%;
