@@ -4,12 +4,12 @@ const Education = () => {
   return (
     <>
       <div className="education">
-        <div className="education-container container">
+        <div className="education-container">
           <div className="education-header mb-3">
             <h1 className="display-4 text-center">Education</h1>
           </div>
-          <div className="education-detail d-flex justify-content-between ">
-            <div className="education1  educations d-flex flex-column align-items-center justify-content-center">
+          <div className="education-detail row row-cols-1 row-cols-md-3 g-4 justify-content-center ">
+            <div className="col education1  educations d-flex flex-column align-items-center justify-content-center">
               <div className="education-icon mb-3">
                 <object
                   type="image/svg+xml"
@@ -26,7 +26,7 @@ const Education = () => {
 
               <div className="institute">Preston University, Islambad</div>
             </div>
-            <div className="education2  educations d-flex flex-column align-items-center justify-content-center">
+            <div className="col education2  educations d-flex flex-column align-items-center justify-content-center">
               <div className="education-icon mb-3">
                 <object
                   type="image/svg+xml"
@@ -44,7 +44,7 @@ const Education = () => {
                 Chinar Army public College, Murree
               </div>
             </div>
-            <div className="education3 educations d-flex flex-column align-items-center justify-content-center">
+            <div className="col education3 educations d-flex flex-column align-items-center justify-content-center">
               <div className="education-icon mb-3">
                 <object
                   type="image/svg+xml"

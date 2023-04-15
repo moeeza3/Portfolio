@@ -87,6 +87,9 @@
         .about-img {
           width: 500px;
           height: 450px;
+          @media screen and (max-width: 762px) {
+            width: 100% !important;
+          }
           object-fit: cover;
           .img-fluid {
             width: 100%;
@@ -95,6 +98,7 @@
           }
         }
         .about-info {
+          height: 450px !important;
           .about-text {
             line-height: 2rem;
             color: colors.$secondaryColor1 !important;
@@ -137,7 +141,9 @@
   //common
   .about-header,
   .education-header,
-  .skills-header {
+  .skills-header,
+  .services-header,
+  .portfolio-header {
     font-family: colors.$poppins !important;
     font-weight: 100 !important;
     letter-spacing: 1px;
@@ -265,58 +271,108 @@
               -ms-border-radius: 10px;
               -o-border-radius: 10px;
             }
-            .html-skill,
-            .css-skill {
-              // width: 0%;
-              // width: 90%;
-              // animation: htmlAnim 3s;
-              // -webkit-animation: htmlAnim 3s;
-              // animation-delay: 5s;
-              // animation-iteration-count: infinite;
-            }
-            // @keyframes htmlAnim {
-            //   0% {
-            //     width: 0%;
-            //   }
-            //   90% {
-            //     width: 80%;
-            //   }
-            // }
           }
         }
       }
-      // .html {
-      //   .skill-bar {
-      //     background-color: #ddd;
-      //     width: 20px;
-      //     height: 100%;
-      //     display: flex;
-      //     align-items: flex-end;
+    }
+  }
+  .services {
+    background: colors.$primaryColor;
+    padding: 5% 0;
+    .services-detail {
+      margin: 1rem 0;
+      .h2 {
+        color: colors.$secondaryColor;
+        font-family: colors.$poppins;
+        font-weight: 300;
+        margin: 1rem 0;
+      }
+      .p {
+        color: colors.$secondaryColor1;
+        font-family: colors.$railway;
+        font-weight: 400;
+        line-height: 1.8rem;
+        margin: 0 1rem;
+      }
+      .services-icon .icon {
+        color: colors.$smallBgColor;
+      }
+      .services-col {
+        color: colors.$secondaryColor;
+        padding: 1rem 0;
+        // background: linear-gradient(
+        //   to bottom,
+        //   colors.$primaryColor,
+        //   colors.$primaryColor1
+        // );
+        background: linear-gradient(45deg, rgb(30, 32, 36), rgb(35, 39, 43));
+        // box-shadow: 0px 0px 20px 0px #f2f2f220;
+        box-shadow: rgb(28, 30, 34) 10px 10px 19px 0px,
+          rgb(38, 42, 46) -10px -10px 19px 0px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+    }
+  }
+  .portfolio {
+    padding: 5% 0;
+    background: colors.$background-2;
+    .portfolio-detail {
+      margin: 1rem 0;
+      .nav-pills {
+        .nav-link {
+          box-shadow: colors.$shadow-1;
+          background: colors.$background-1;
+          height: 70px;
+          color: colors.$secondaryColor;
+          text-transform: capitalize;
+          font-family: colors.$railway;
+          font-weight: 500;
+        }
+        .active {
+          color: colors.$importantColor;
+        }
+      }
+      .tab-content {
+        margin-top: 2rem;
+      }
+      .card {
+        height: 280px !important;
+        box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        background: linear-gradient(145deg, #1e2024, #23272b);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-      //     .html-skill {
-      //       height: 90%;
-      //       width: 20px;
-      //       background-color: #04aa6d;
-      //     } /* Green */
-      //   }
-      // }
-      // .skill {
-      //   width: 120px;
-      //   height: 120px;
-      //   background: linear-gradient(45deg, rgb(30, 32, 36), rgb(35, 39, 43));
+        .img-container {
+          width: 100%;
+          height: 150px;
 
-      //   box-shadow: rgb(28, 30, 34) 10px 10px 19px 0px,
-      //     rgb(38, 42, 46) -10px -10px 19px 0px;
-      //   border-radius: 10px;
-      //   .logo {
-      //     width: 100%;
-      //     .skill-icons {
-      //     }
-      //   }
-      //   .percent {
-      //     color: colors.$importantColor;
-      //   }
-      // }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .card-body {
+          .card-title {
+            color: colors.$secondaryColor1;
+            text-align: left;
+          }
+          .live-link {
+            color: colors.$secondaryColor1;
+          }
+          .live-link:hover {
+            color: colors.$importantColor;
+          }
+        }
+      }
+      .card:hover {
+        background: linear-gradient(to right bottom, #212428, #16181c);
+      }
     }
   }
 }

@@ -66,14 +66,22 @@
   height: 450px;
   object-fit: cover;
 }
+@media screen and (max-width: 762px) {
+  .main .about .about-container .about-col .about-img {
+    width: 100% !important;
+  }
+}
 .main .about .about-container .about-col .about-img .img-fluid {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.main .about .about-container .about-col .about-info {
+  height: 450px !important;
+}
 .main .about .about-container .about-col .about-info .about-text {
   line-height: 2rem;
-  color: hsl(0, 0%, 52%) !important;
+  color: #c4cfde !important;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
@@ -81,8 +89,8 @@
   width: 100%;
 }
 .main .about .about-container .about-col .about-info .about-social .about-social-text {
-  border-right: 2px solid hsl(0, 0%, 52%);
-  border-left: 2px solid hsl(0, 0%, 52%);
+  border-right: 2px solid #c4cfde;
+  border-left: 2px solid #c4cfde;
   color: #00b4d8;
 }
 .main .about .about-container .about-col .about-info .about-social .about-icon {
@@ -102,14 +110,18 @@
 }
 .main .about-header,
 .main .education-header,
-.main .skills-header {
+.main .skills-header,
+.main .services-header,
+.main .portfolio-header {
   font-family: "Poppins", sans-serif !important;
   font-weight: 100 !important;
   letter-spacing: 1px;
 }
 .main .about-header h1,
 .main .education-header h1,
-.main .skills-header h1 {
+.main .skills-header h1,
+.main .services-header h1,
+.main .portfolio-header h1 {
   color: #e27c61 !important;
 }
 .main .education {
@@ -132,7 +144,7 @@
   -o-border-radius: 10px;
 }
 .main .education .education-detail .educations .date {
-  color: hsl(0, 0%, 52%);
+  color: #c4cfde;
 }
 .main .education .education-detail .educations .program1 {
   color: #f06c50 !important;
@@ -144,7 +156,7 @@
   color: #f06c50;
 }
 .main .education .education-detail .educations .institute {
-  color: hsl(0, 0%, 52%);
+  color: #c4cfde;
 }
 .main .education .education-detail .educations .program {
   font-weight: 600;
@@ -190,7 +202,7 @@
 .main .skills .skills-container .skills-detail .common .skill-text,
 .main .skills .skills-container .skills-detail .common .skill-percent {
   font-family: "Raleway", sans-serif;
-  color: hsl(0, 0%, 52%);
+  color: #c4cfde;
 }
 .main .skills .skills-container .skills-detail .common .skill-bar {
   width: 100%;
@@ -211,4 +223,90 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+.main .services {
+  background: #222222;
+  padding: 5% 0;
+}
+.main .services .services-detail {
+  margin: 1rem 0;
+}
+.main .services .services-detail .h2 {
+  color: #fefefe;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+.main .services .services-detail .p {
+  color: #c4cfde;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin: 0 1rem;
+}
+.main .services .services-detail .services-icon .icon {
+  color: #f06c50;
+}
+.main .services .services-detail .services-col {
+  color: #fefefe;
+  padding: 1rem 0;
+  background: linear-gradient(45deg, rgb(30, 32, 36), rgb(35, 39, 43));
+  box-shadow: rgb(28, 30, 34) 10px 10px 19px 0px, rgb(38, 42, 46) -10px -10px 19px 0px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.main .portfolio {
+  padding: 5% 0;
+  background: #212428;
+}
+.main .portfolio .portfolio-detail {
+  margin: 1rem 0;
+}
+.main .portfolio .portfolio-detail .nav-pills .nav-link {
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  height: 70px;
+  color: #fefefe;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.main .portfolio .portfolio-detail .nav-pills .active {
+  color: #e27c61;
+}
+.main .portfolio .portfolio-detail .tab-content {
+  margin-top: 2rem;
+}
+.main .portfolio .portfolio-detail .card {
+  height: 280px !important;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .portfolio .portfolio-detail .card .img-container {
+  width: 100%;
+  height: 150px;
+}
+.main .portfolio .portfolio-detail .card .img-container img {
+  width: 100%;
+  height: 100%;
+}
+.main .portfolio .portfolio-detail .card .card-body .card-title {
+  color: #c4cfde;
+  text-align: left;
+}
+.main .portfolio .portfolio-detail .card .card-body .live-link {
+  color: #c4cfde;
+}
+.main .portfolio .portfolio-detail .card .card-body .live-link:hover {
+  color: #e27c61;
+}
+.main .portfolio .portfolio-detail .card:hover {
+  background: linear-gradient(to right bottom, #212428, #16181c);
 }/*# sourceMappingURL=global.css.map */

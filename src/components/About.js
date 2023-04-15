@@ -13,12 +13,12 @@ const About = () => {
   return (
     <>
       <div className="about">
-        <div className="about-container container-md container-fluid">
+        <div className="about-container container-md container-fluid px-md-0 px-4">
           <div className="about-header mb-3">
             <h1 className="display-4 text-center">About Me</h1>
           </div>
-          <div className="about-col d-flex ">
-            <div className="col">
+          <div className="about-col row justify-content-center align-items-center my-4 my-md-5 ">
+            <div className="col-md col-12  px-md-0 px-0">
               <div className="about-img">
                 <Image
                   src="/3.jpg"
@@ -28,8 +28,8 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="col about-info d-flex flex-column justify-content-between">
-              <p className="fs-5 about-text">
+            <div className="col-md col-12 about-info d-flex flex-column justify-content-between">
+              <p className="fs-5 about-text text-center text-md-start">
                 I am a Website Developer from Rawalpindi, with a strong focus in
                 Web Development. I love to get new experiences and always learn
                 from my surroundings. I've done many projects. You can check it
@@ -57,9 +57,9 @@ const About = () => {
               </div>
             </div>
           </div>
+          <Education />
+          <Skills />
         </div>
-        <Education />
-        <Skills />
       </div>
     </>
   );

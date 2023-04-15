@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <>
       <div className="skills">
-        <div className="skills-container container">
+        <div className="skills-container">
           <div className="skills-header">
             <h1 className="display-4 text-center">Skills</h1>
 
@@ -18,8 +18,8 @@ const Skills = () => {
      3   }}
             ></motion.div> */}
           </div>
-          <div className="skills-detail d-flex flex-wrap justify-content-between">
-            <div className="main common col-5">
+          <div className="skills-detail row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <div className="main common col">
               <div className="fs-3 common-text">Main</div>
               <div className="html skill-container">
                 <div className="skill-cont d-flex justify-content-between">
@@ -75,7 +75,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="frameworks common col-5">
+            <div className="frameworks common col">
               <div className="fs-3 common-text">FrameWorks</div>
               <div className="bootstrap skill-container">
                 <div className="skill-cont d-flex justify-content-between">
@@ -131,7 +131,7 @@ const Skills = () => {
               </div>
             </div>
             {/* css-preprocessor */}
-            <div className="frameworks common col-5">
+            <div className="frameworks common col">
               <div className="fs-3 common-text">CSS Pre-Processors</div>
               <div className="css-processors skill-container">
                 <div className="skill-cont d-flex justify-content-between">
@@ -152,7 +152,7 @@ const Skills = () => {
               </div>
             </div>
             {/* library */}
-            <div className="frameworks common col-5">
+            <div className="frameworks common col">
               <div className="fs-3 common-text">Js Library</div>
               <div className="jquery skill-container">
                 <div className="skill-cont d-flex justify-content-between">
@@ -173,7 +173,7 @@ const Skills = () => {
               </div>
             </div>
             {/* backend -----------------------*/}
-            <div className="frameworks common col-5">
+            <div className="frameworks common col">
               <div className="fs-3 common-text">Backend</div>
               <div className="php skill-container">
                 <div className="skill-cont d-flex justify-content-between">
@@ -210,7 +210,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="frameworks common col-5">
+            <div className="frameworks common col">
               <div className="fs-3 common-text">Others</div>
               <div className="seo skill-container">
                 <div className="skill-cont d-flex justify-content-between">

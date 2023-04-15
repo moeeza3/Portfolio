@@ -3,6 +3,8 @@ import Menu from "./Menu";
 import Hero from "./Hero";
 import About from "./About";
 import Education from "./Education";
+import Services from "./Services";
+import Portfolio from "./Portfolio";
 const Main = () => {
   return (
     <>
@@ -11,6 +13,8 @@ const Main = () => {
         <Hero />
         <About />
         {/* <Education /> */}
+        {/* <Services />
+        <Portfolio /> */}
       </div>
     </>
   );
