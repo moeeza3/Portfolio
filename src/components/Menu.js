@@ -1,48 +1,22 @@
+import { useState } from "react";
 import Link from "next/link";
+import { FaBars } from "react-icons/fa";
+import { motion } from "framer-motion";
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+};
 const Menu = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <div className="navbar-brand-container">
-            <Link href="/" className="navbar-brand fs-4 fw-bold">
-              M.
-            </Link>
-          </div>
-
-          <div class="navbar-list" id="navbarNav">
-            <ul class="navbar-nav justify-content-end">
-              <li class="nav-item">
-                <Link href="/" className="nav-link active">
-                  Home
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link href="/" className="nav-link">
-                  About
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link href="/" className="nav-link">
-                  Services
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link href="/" className="nav-link">
-                  Portfolio
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link href="/" className="nav-link">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <button className="btn btn-close"></button>
+      <div className="navG">
+        <div className="nav-link">home</div>
+        <div className="nav-link">About</div>
+        <div className="nav-link">service</div>
+      </div>
     </>
   );
 };
-
 export default Menu;

@@ -5,6 +5,8 @@ import About from "./About";
 import Education from "./Education";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
+import Footer from "./Footer";
+
 const Main = () => {
   return (
     <>
@@ -13,8 +15,9 @@ const Main = () => {
         <Hero />
         <About />
         {/* <Education /> */}
-        {/* <Services />
-        <Portfolio /> */}
+        <Services />
+        <Portfolio />
+        <Footer />
       </div>
     </>
   );

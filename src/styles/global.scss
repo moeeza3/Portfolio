@@ -15,14 +15,18 @@
     &-brand-container {
       flex: 1;
     }
-
+    .nav {
+      display: none;
+    }
     .navbar-brand {
       // background: colors.$smallBgColor !important;
       background: linear-gradient(to bottom, #b4494f, colors.$smallBgColor);
       color: colors.$secondaryColor !important;
       padding: 0.5rem 1rem;
     }
-
+    .nav-toggler {
+      display: none;
+    }
     &-list {
       flex: 1;
 
@@ -30,6 +34,21 @@
         .nav-item {
           margin: 0 1rem !important;
         }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .nav-toggler {
+        display: block;
+      }
+      .navbar-list {
+        display: none;
+      }
+      .nav {
+        background: colors.$primaryColor !important;
+      }
+      .open {
+        background: colors.$primaryColor !important;
       }
     }
   }
@@ -372,6 +391,30 @@
       }
       .card:hover {
         background: linear-gradient(to right bottom, #212428, #16181c);
+      }
+    }
+  }
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .footer {
+    padding: 5% 0;
+    background: colors.$background-2 !important;
+    .footer-details {
+      h3 {
+        color: colors.$secondaryColor1;
+      }
+      p,
+      .p,
+      .nav-link {
+        color: colors.$secondaryColor;
       }
     }
   }
