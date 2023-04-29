@@ -38,7 +38,7 @@ const Footer = () => {
           </Row>
         </Container>
       </footer> */}
-      <footer className="footer">
+      <footer className="footer" id="footer">
         <div className="container">
           <div className="row footer-details">
             <div className="col-12 col-md-4">

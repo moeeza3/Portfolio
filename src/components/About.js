@@ -12,7 +12,7 @@ import Skills from "./Skills";
 const About = () => {
   return (
     <>
-      <div className="about">
+      <div className="about" id="about">
         <div className="about-container container-md container-fluid px-md-0 px-4">
           <div className="about-header mb-3">
             <h1 className="display-4 text-center">About Me</h1>

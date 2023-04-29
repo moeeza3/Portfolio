@@ -3,7 +3,7 @@ import Image from "next/image";
 const Education = () => {
   return (
     <>
-      <div className="education">
+      <div className="education" id="education">
         <div className="education-container">
           <div className="education-header mb-3">
             <h1 className="display-4 text-center">Education</h1>

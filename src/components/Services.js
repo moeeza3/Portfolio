@@ -5,7 +5,7 @@ import { SiWordpress } from "react-icons/si";
 const Services = () => {
   return (
     <>
-      <div className="services">
+      <div className="services" id="services">
         <div className="service-container container-md container-fluid d-flex justify-content-between flex-column align-items-center">
           <div className="services-header mb-3">
             <h1 className="display-4 text-center">What i can do for you?</h1>

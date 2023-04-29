@@ -7,6 +7,10 @@
 .main .navbar {
   background: #222222 !important;
 }
+.main .navbar .navbar-desktop .nav-link:hover,
+.main .navbar .navbar-mobile .nav-link:hover {
+  color: #e27c61 !important;
+}
 .main .navbar-brand,
 .main .navbar .nav-link {
   color: #fefefe !important;
@@ -14,35 +18,58 @@
 .main .navbar-brand-container {
   flex: 1;
 }
-.main .navbar .nav {
-  display: none;
-}
 .main .navbar .navbar-brand {
   background: linear-gradient(to bottom, #b4494f, #f06c50);
   color: #fefefe !important;
   padding: 0.5rem 1rem;
 }
+.main .navbar .navbar-mobile {
+  display: none;
+}
 .main .navbar .nav-toggler {
   display: none;
 }
-.main .navbar-list {
-  flex: 1;
-}
-.main .navbar-list .navbar-nav .nav-item {
-  margin: 0 1rem !important;
-}
 @media screen and (max-width: 992px) {
-  .main .navbar .nav-toggler {
-    display: block;
+  .main .navbar header {
+    position: relative;
   }
-  .main .navbar .navbar-list {
+  .main .navbar .navbar-desktop {
     display: none;
   }
-  .main .navbar .nav {
-    background: #222222 !important;
+  .main .navbar .navbar-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #212428;
   }
-  .main .navbar .open {
-    background: #222222 !important;
+  .main .navbar .navbar-mobile ul {
+    text-align: center;
+  }
+  .main .navbar .navbar-mobile .nav-link {
+    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    font-weight: 300 !important;
+  }
+  .main .navbar .menu-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(250, 128, 114, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    border: none;
+    z-index: 1;
+  }
+  .main .navbar .menu-btn:hover .lines {
+    background: linear-gradient(to bottom, #b4494f, #f06c50);
+  }
+  .main .navbar .nav-toggler .lines {
+    height: 2px;
+    background: #fefefe;
   }
 }
 .main .hero {
