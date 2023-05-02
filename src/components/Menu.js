@@ -4,13 +4,16 @@ import { FaBars } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 
-const Menu = () => {
+const Menu = ({ homeRef, aboutRef, servicesRef }) => {
   const [isHover, setIsHover] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+  // const handleScroll = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
 
   return (
     <>
@@ -44,13 +47,19 @@ const Menu = () => {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Services</a>
+                  <a class="nav-link" href="#services">
+                    Services
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Portfolio</a>
+                  <a class="nav-link" href="#portfolio" onClick={handleClick}>
+                    Portfolio
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Contact</a>
+                  <a class="nav-link" href="#contact">
+                    Contact
+                  </a>
                 </li>
               </ul>
             </div>
@@ -194,8 +203,16 @@ const Menu = () => {
                     Portfolio
                   </a>
                 </li>
-                <li class="nav-item" href="#footer">
-                  <a class="nav-link">Contact</a>
+                <li class="nav-item">
+                  <motion.a
+                    initial={false}
+                    animate={isOpen ? "open" : "closed"}
+                    onClick={handleClick}
+                    class="nav-link"
+                    href="#contact"
+                  >
+                    Contact
+                  </motion.a>
                 </li>
               </motion.ul>
             </motion.div>

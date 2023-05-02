@@ -9,10 +9,17 @@ import {
 import { RxLink1 } from "react-icons/rx";
 import Education from "./Education";
 import Skills from "./Skills";
-const About = () => {
+import { motion } from "framer-motion";
+
+const About = (style) => {
   return (
     <>
-      <div className="about" id="about">
+      <motion.div
+        className="about"
+        id="about"
+        animate={{ scrollY: 1 }}
+        transition={{ duration: 2, delay: 1 }}
+      >
         <div className="about-container container-md container-fluid px-md-0 px-4">
           <div className="about-header mb-3">
             <h1 className="display-4 text-center">About Me</h1>
@@ -60,7 +67,7 @@ const About = () => {
           <Education />
           <Skills />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

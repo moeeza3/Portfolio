@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Menu from "./Menu";
 import Hero from "./Hero";
 import About from "./About";
@@ -14,7 +14,7 @@ const Main = () => {
         <Menu />
         <Hero />
         <About />
-        {/* <Education /> */}
+
         <Services />
         <Portfolio />
         <Footer />
