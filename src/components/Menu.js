@@ -1,38 +1,32 @@
 import { useState } from "react";
-import Link from "next/link";
-import { FaBars } from "react-icons/fa";
-import { motion, AnimatePresence } from "framer-motion";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { motion } from "framer-motion";
 
-const Menu = ({ homeRef, aboutRef, servicesRef }) => {
+const Menu = () => {
   const [isHover, setIsHover] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-  // const handleScroll = () => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // };
 
   return (
     <>
       <header>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <div className="navbar-brand-container">
-              <a class="navbar-brand" href="#">
+        <nav class="navbar navbar-expand-lg" id="home">
+          <div class="container-md container-fluid px-0 col-11 col-md-12">
+            <div className="navbar-brand-container ">
+              <a class="navbar-brand" href="#home">
                 M,
               </a>
             </div>
 
             <div
-              class="navbar-desktop ms-auto mb-2 mb-lg-0 "
+              class="navbar-desktop ms-md-auto mb-2 mb-lg-0 "
               id="navbarTogglerDemo02"
             >
               <ul class="navbar-nav  ">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="">
+                  <a class="nav-link active" aria-current="page" href="#home">
                     Home
                   </a>
                 </li>
@@ -179,7 +173,7 @@ const Menu = ({ homeRef, aboutRef, servicesRef }) => {
                 }}
               >
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="">
+                  <a class="nav-link active" aria-current="page" href="home">
                     Home
                   </a>
                 </li>

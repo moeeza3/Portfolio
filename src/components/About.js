@@ -6,27 +6,20 @@ import {
   FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa";
-import { RxLink1 } from "react-icons/rx";
 import Education from "./Education";
-import Skills from "./Skills";
 import { motion } from "framer-motion";
-
+import Skills from "./Skills";
 const About = (style) => {
   return (
     <>
-      <motion.div
-        className="about"
-        id="about"
-        animate={{ scrollY: 1 }}
-        transition={{ duration: 2, delay: 1 }}
-      >
-        <div className="about-container container-md container-fluid px-md-0 px-4">
+      <motion.div className="about" id="about">
+        <div className="about-container container-md container-fluid px-0 col-11 col-md-12">
           <div className="about-header mb-3">
             <h1 className="display-4 text-center">About Me</h1>
           </div>
-          <div className="about-col row justify-content-center align-items-center my-4 my-md-5 ">
-            <div className="col-md col-12  px-md-0 px-0">
-              <div className="about-img">
+          <div className="about-col d-flex flex-md-row justify-content-md-between align-items-md-center flex-column  justify-content-between align-items-center my-4 my-lg-5 px-0">
+            <div className="col-md col-11 d-flex flex-column justify-content-center align-items-md-start align-items-center bg-warning">
+              <div className="about-img ">
                 <Image
                   src="/3.jpg"
                   className="img-fluid"
@@ -35,7 +28,7 @@ const About = (style) => {
                 />
               </div>
             </div>
-            <div className="col-md col-12 about-info d-flex flex-column justify-content-between">
+            <div className="about-info col-md col-11 d-flex flex-column justify-content-md-between justify-content-evenly ps-md-5">
               <p className="fs-5 about-text text-center text-md-start">
                 I am a Website Developer from Rawalpindi, with a strong focus in
                 Web Development. I love to get new experiences and always learn
@@ -44,8 +37,8 @@ const About = (style) => {
                 any opportunities and challenges.
               </p>
               <div className="about-social d-flex ">
-                <div className="about-social-text d-flex justify-content-center align-items-center col-2 ">
-                  <RxLink1 className="fs-4" />
+                <div className="about-social-text d-flex justify-content-center align-items-center col-2 fs-5">
+                  Follow:
                 </div>
                 <div className="about-social-container col-10 d-flex justify-content-around">
                   <div className="fb about-icon">

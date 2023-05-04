@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Menu from "./Menu";
 import Hero from "./Hero";
 import About from "./About";
-import Education from "./Education";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Footer from "./Footer";
@@ -14,7 +13,6 @@ const Main = () => {
         <Menu />
         <Hero />
         <About />
-
         <Services />
         <Portfolio />
         <Footer />

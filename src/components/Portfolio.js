@@ -19,7 +19,7 @@ const Portfolio = () => {
   return (
     <>
       <div className="portfolio" id="portfolio">
-        <div className="portfolio-container container-md container-fluid">
+        <div className="portfolio-container container-md container-fluid px-0 col-11 col-md-12">
           <div className="portfolio-header">
             <h1 className="display-4 text-center">My Portfolio</h1>
           </div>
@@ -34,7 +34,7 @@ const Portfolio = () => {
             >
               <Tab eventKey="All" title="All">
                 {/* Render all projects */}
-                <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-auto g-4">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-auto g-4">
                   {project.map((p) => (
                     <div key={p.title} className="col card-container">
                       <div className="card">
@@ -46,8 +46,8 @@ const Portfolio = () => {
                           />
                         </div>
 
-                        <div className="card-body px-0">
-                          <h5 className="card-title mx-0">{p.title}</h5>
+                        <div className="card-body text-start text-sm-center text-md-start px-0">
+                          <h5 className="card-title mx-0 ">{p.title}</h5>
                           <a
                             href={p.livedemo}
                             target="_blank"
@@ -79,7 +79,7 @@ const Portfolio = () => {
                                 alt={p.title}
                               />
                             </div>
-                            <div className="card-body px-0">
+                            <div className="card-body text-start text-sm-center text-md-start px-0">
                               <h5 className="card-title mx-0">{p.title}</h5>
                               <a
                                 href={p.livedemo}

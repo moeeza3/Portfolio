@@ -4,7 +4,7 @@ $secondaryColor: #fefefe;
 $secondaryColor1: #c4cfde;
 $smallBgColor: #f06c50;
 $importantColor: #e27c61;
-
+$pagebg: #212428;
 //fonts
 
 $poppins: "Poppins", sans-serif;
@@ -14,7 +14,20 @@ $railway: "Raleway", sans-serif;
 
 $background-1: linear-gradient(145deg, #1e2024, #23272b);
 $background-2: #212428;
+$background-box: linear-gradient(to right bottom, #212428, #16181c);
+// .rn-service::before {
+//   content: "";
+//   position: absolute;
+//   transition: var(--transition);
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 10px;
+//   top: 0;
+//   left: 0;
 
+//   opacity: 0;
+//   z-index: -1;
+// }
 // shadow
 $shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 $shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
