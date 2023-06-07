@@ -32,9 +32,9 @@ const About = (style) => {
               <p className="fs-5 about-text text-center text-md-start">
                 I am a Website Developer from Rawalpindi, with a strong focus in
                 Web Development. I love to get new experiences and always learn
-                from my surroundings. I've done many projects. You can check it
-                through portfolio section on this website. I looking forward to
-                any opportunities and challenges.
+                from my surroundings. I&apos;ve done many projects. You can
+                check it through portfolio section on this website. I looking
+                forward to any opportunities and challenges.
               </p>
               <div className="about-social d-flex ">
                 <div className="about-social-text d-flex justify-content-center align-items-center col-2 fs-5">
