@@ -18,7 +18,7 @@ const About = (style) => {
             <h1 className="display-4 text-center">About Me</h1>
           </div>
           <div className="about-col d-flex flex-md-row justify-content-md-between align-items-md-center flex-column  justify-content-between align-items-center my-4 my-lg-5 px-0">
-            <div className="col-md col-11 d-flex flex-column justify-content-center align-items-md-start align-items-center bg-warning">
+            <div className="col-md col-11 d-flex flex-column justify-content-center align-items-md-start align-items-center">
               <div className="about-img ">
                 <Image
                   src="/3.jpg"
