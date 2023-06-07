@@ -5,9 +5,12 @@ const Footer = () => {
     <>
       <footer className="footer" id="contact">
         <div className="container-md container-fluid px-0 col-11 col-md-12">
-          <div className="row footer-details px-0">
+          <div className="d-flex flex-md-row justify-content-md-between align-items-md-center flex-column  justify-content-between align-items-center footer-details px-0">
             <div className="col-12 col-md-4">
-              <h3>M</h3>
+              <a href="#home" className="nav-link nav-brand">
+                <h3>MA</h3>
+              </a>
+
               <p className="fs-6">Building the web, one pixel at a time.</p>
             </div>
             <div className="col-12 col-md-4">

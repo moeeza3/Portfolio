@@ -16,7 +16,7 @@ const Menu = () => {
           <div class="container-md container-fluid px-0 col-11 col-md-12">
             <div className="navbar-brand-container ">
               <a class="navbar-brand" href="#home">
-                M,
+                <h3>MA</h3>
               </a>
             </div>
 
@@ -173,29 +173,60 @@ const Menu = () => {
                 }}
               >
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="home">
+                  <motion.a
+                    initial={false}
+                    animate={isOpen ? "open" : "closed"}
+                    onClick={handleClick}
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#home"
+                  >
                     Home
-                  </a>
+                  </motion.a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">
+                  <motion.a
+                    initial={false}
+                    animate={isOpen ? "open" : "closed"}
+                    onClick={handleClick}
+                    class="nav-link"
+                    href="#about"
+                  >
                     About
-                  </a>
+                  </motion.a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#education">
+                  <motion.a
+                    initial={false}
+                    animate={isOpen ? "open" : "closed"}
+                    onClick={handleClick}
+                    class="nav-link"
+                    href="#education"
+                  >
                     Resume
-                  </a>
+                  </motion.a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#services">
+                  <motion.a
+                    initial={false}
+                    animate={isOpen ? "open" : "closed"}
+                    onClick={handleClick}
+                    class="nav-link"
+                    href="#services"
+                  >
                     Services
-                  </a>
+                  </motion.a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">
+                  <motion.a
+                    initial={false}
+                    animate={isOpen ? "open" : "closed"}
+                    onClick={handleClick}
+                    class="nav-link"
+                    href="#portfolio"
+                  >
                     Portfolio
-                  </a>
+                  </motion.a>
                 </li>
                 <li class="nav-item">
                   <motion.a

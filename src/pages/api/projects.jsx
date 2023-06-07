@@ -12,12 +12,40 @@ const projects = [
     },
   },
   {
+    imgsrc: "../assets/img/ecommerce.png",
+    title: "Light Furniture Store",
+    livedemo: "https://moeeza3.github.io/Manage-Landing-Page/",
+    category: {
+      id: 2,
+      name: "react",
+    },
+  },
+  {
+    imgsrc: "../assets/img/shortner.png",
+    title: "Link Shortner",
+    livedemo: "https://moeeza3.github.io/Manage-Landing-Page/",
+    category: {
+      id: 2,
+      name: "react",
+    },
+  },
+
+  {
     imgsrc: "../assets/img/chat.png",
     title: "Chat Theme Bootstrap",
     livedemo: "https://moeeza3.github.io/Chat-App-Illustration-Using-CSS/",
     category: {
       id: 1,
       name: "html",
+    },
+  },
+  {
+    imgsrc: "../assets/img/themeSwitcher.png",
+    title: "Rest Countries Api",
+    livedemo: "https://moeeza3.github.io/Manage-Landing-Page/",
+    category: {
+      id: 2,
+      name: "react",
     },
   },
   {
@@ -67,7 +95,7 @@ const projects = [
     },
   },
   {
-    imgsrc: "../assets/img/reactgridtestimonial.png",
+    imgsrc: "../assets/img/reactgridtestimonail.png",
     title: "Testimonail Grid React",
     livedemo: "https://moeeza3.github.io/Testimonial-Grid-Section-main/",
     category: {
@@ -75,11 +103,7 @@ const projects = [
       name: "react",
     },
   },
-  {
-    imgsrc: "../assets/img/reactnavbar.png",
-    title: "React Navbar Custom",
-    livedemo: "https://moeeza3.github.io/Responsive-Navbar-React-Router/",
-  },
+
   {
     imgsrc: "../assets/img/calculator.png",
     title: "Calculator App",
@@ -88,11 +112,6 @@ const projects = [
       id: 1,
       name: "html",
     },
-  },
-  {
-    imgsrc: "../assets/img/articlecomponent.png",
-    title: "Article Component",
-    livedemo: "https://moeeza3.github.io/Article-Component-using-Flex/",
   },
   {
     imgsrc: "../assets/img/attendance.png",

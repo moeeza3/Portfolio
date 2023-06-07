@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+// import cv from "../../public/assets/cv/MoeezAhmadcv";
 const Hero = () => {
   return (
     <>
@@ -15,9 +15,13 @@ const Hero = () => {
                 Web Developer <span className="mx-0 mx-sm-2">/</span> Front-end
                 Developer
               </p>
-              <button className="fs-5 px-4 py-2 resume mb-3">
+              <a
+                className="fs-5 px-4 py-2 resume nav-link mb-3"
+                href="../assets/cv/MoeezAhmadcv.pdf"
+                download
+              >
                 Download Resume
-              </button>
+              </a>
             </div>
             <div className="col-md col-12 d-flex justify-content-center align-items-center ">
               <div className="w-100 d-flex justify-content-center">

@@ -42,16 +42,33 @@ const About = (style) => {
                 </div>
                 <div className="about-social-container col-10 d-flex justify-content-around">
                   <div className="fb about-icon">
-                    <FaFacebookF className="about-icon-text fb-icon fs-5" />
+                    <a
+                      href="https://web.facebook.com/ma04ma/"
+                      className="nav-link"
+                    >
+                      <FaFacebookF className="about-icon-text fb-icon fs-5" />
+                    </a>
                   </div>
                   <div className="ins about-icon">
-                    <FaInstagram className="about-icon-text ins-icon fs-5" />
+                    <a
+                      href="https://www.instagram.com/moeez6332/"
+                      className="nav-link"
+                    >
+                      <FaInstagram className="about-icon-text ins-icon fs-5" />
+                    </a>
                   </div>
                   <div className="lin about-icon">
-                    <FaLinkedinIn className="about-icon-text fs-5" />
+                    <a
+                      href="https://www.linkedin.com/in/moeez-ahmad-19a417131/"
+                      className="nav-link"
+                    >
+                      <FaLinkedinIn className="about-icon-text fs-5" />
+                    </a>
                   </div>
                   <div className="git about-icon">
-                    <FaGithub className="about-icon-text fs-5" />
+                    <a href="https://github.com/moeeza3" className="nav-link">
+                      <FaGithub className="about-icon-text fs-5" />
+                    </a>
                   </div>
                 </div>
               </div>
