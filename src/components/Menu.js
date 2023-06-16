@@ -12,46 +12,54 @@ const Menu = () => {
   return (
     <>
       <header>
-        <nav class="navbar navbar-expand-lg" id="home">
-          <div class="container-md container-fluid px-0 col-11 col-md-12">
+        <nav className="navbar navbar-expand-lg" id="home">
+          <div className="container-md container-fluid px-0 col-11 col-md-12">
             <div className="navbar-brand-container ">
-              <a class="navbar-brand" href="#home">
+              <a className="navbar-brand" href="#home">
                 <h3>MA</h3>
               </a>
             </div>
 
             <div
-              class="navbar-desktop ms-md-auto mb-2 mb-lg-0 "
+              className="navbar-desktop ms-md-auto mb-2 mb-lg-0 "
               id="navbarTogglerDemo02"
             >
-              <ul class="navbar-nav  ">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home">
+              <ul className="navbar-nav  ">
+                <li className="nav-item">
+                  <a
+                    className="nav-link active"
+                    aria-current="page"
+                    href="#home"
+                  >
                     Home
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">
+                <li className="nav-item">
+                  <a className="nav-link" href="#about">
                     About
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#education">
+                <li className="nav-item">
+                  <a className="nav-link" href="#education">
                     Resume
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#services">
+                <li className="nav-item">
+                  <a className="nav-link" href="#services">
                     Services
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio" onClick={handleClick}>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="#portfolio"
+                    onClick={handleClick}
+                  >
                     Portfolio
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">
+                <li className="nav-item">
+                  <a className="nav-link" href="#contact">
                     Contact
                   </a>
                 </li>
@@ -137,7 +145,7 @@ const Menu = () => {
               ></motion.div>
             </motion.button>
             <motion.div
-              class="navbar-mobile "
+              className="navbar-mobile "
               id="navbarTogglerDemo02"
               initial={false}
               animate={isOpen ? "open" : "closed"}
@@ -157,7 +165,7 @@ const Menu = () => {
               }}
             >
               <motion.ul
-                class="navbar-nav "
+                className="navbar-nav "
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
                 variants={{
@@ -172,68 +180,68 @@ const Menu = () => {
                   },
                 }}
               >
-                <li class="nav-item">
+                <li className="nav-item">
                   <motion.a
                     initial={false}
                     animate={isOpen ? "open" : "closed"}
                     onClick={handleClick}
-                    class="nav-link active"
+                    className="nav-link active"
                     aria-current="page"
                     href="#home"
                   >
                     Home
                   </motion.a>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <motion.a
                     initial={false}
                     animate={isOpen ? "open" : "closed"}
                     onClick={handleClick}
-                    class="nav-link"
+                    className="nav-link"
                     href="#about"
                   >
                     About
                   </motion.a>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <motion.a
                     initial={false}
                     animate={isOpen ? "open" : "closed"}
                     onClick={handleClick}
-                    class="nav-link"
+                    className="nav-link"
                     href="#education"
                   >
                     Resume
                   </motion.a>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <motion.a
                     initial={false}
                     animate={isOpen ? "open" : "closed"}
                     onClick={handleClick}
-                    class="nav-link"
+                    className="nav-link"
                     href="#services"
                   >
                     Services
                   </motion.a>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <motion.a
                     initial={false}
                     animate={isOpen ? "open" : "closed"}
                     onClick={handleClick}
-                    class="nav-link"
+                    className="nav-link"
                     href="#portfolio"
                   >
                     Portfolio
                   </motion.a>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <motion.a
                     initial={false}
                     animate={isOpen ? "open" : "closed"}
                     onClick={handleClick}
-                    class="nav-link"
+                    classNameNAme="nav-link"
                     href="#contact"
                   >
                     Contact

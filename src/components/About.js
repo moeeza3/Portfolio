@@ -37,7 +37,7 @@ const About = () => {
                 check it through portfolio section on this website. I looking
                 forward to any opportunities and challenges.
               </p>
-              <div className="about-social d-flex ">
+              <div className="about-social d-flex">
                 <div className="about-social-text d-flex justify-content-center align-items-center col-2 fs-5">
                   Follow:
                 </div>

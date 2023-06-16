@@ -14,7 +14,7 @@ const projects = [
   {
     imgsrc: "../assets/img/ecommerce.png",
     title: "Light Furniture Store",
-    livedemo: "https://moeeza3.github.io/Manage-Landing-Page/",
+    livedemo: "https://moeeza3.github.io/Light-Furniture-Store/",
     category: {
       id: 2,
       name: "react",
@@ -23,7 +23,7 @@ const projects = [
   {
     imgsrc: "../assets/img/shortner.png",
     title: "Link Shortner",
-    livedemo: "https://moeeza3.github.io/Manage-Landing-Page/",
+    livedemo: "https://moeeza3.github.io/Api-Shortner-Website/",
     category: {
       id: 2,
       name: "react",
@@ -42,7 +42,7 @@ const projects = [
   {
     imgsrc: "../assets/img/themeSwitcher.png",
     title: "Rest Countries Api",
-    livedemo: "https://moeeza3.github.io/Manage-Landing-Page/",
+    livedemo: "https://moeeza3.github.io/Rest-Countries-Api-Theme-Switcher/",
     category: {
       id: 2,
       name: "react",
