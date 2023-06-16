@@ -9,7 +9,7 @@ import {
 import Education from "./Education";
 import { motion } from "framer-motion";
 import Skills from "./Skills";
-const About = (style) => {
+const About = () => {
   return (
     <>
       <motion.div className="about" id="about">
@@ -25,6 +25,7 @@ const About = (style) => {
                   className="img-fluid"
                   width={400}
                   height={200}
+                  alt="about-img"
                 />
               </div>
             </div>
