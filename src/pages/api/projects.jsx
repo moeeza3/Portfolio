@@ -3,7 +3,7 @@
 
 const projects = [
   {
-    imgsrc: "../assets/img/manage.png",
+    imgsrc: "../assets/img/manage.PNG",
     title: "Manage Landing Page",
     livedemo: "https://moeeza3.github.io/Manage-Landing-Page/",
     category: {
@@ -49,7 +49,7 @@ const projects = [
     },
   },
   {
-    imgsrc: "../assets/img/fylo.png",
+    imgsrc: "../assets/img/fylo.PNG",
     title: "Fylo Landing page",
     livedemo:
       "https://moeeza3.github.io/Fylo-Responsive-with-Bootstrap-Flex-Grid/",
