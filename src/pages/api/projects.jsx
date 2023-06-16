@@ -4,7 +4,7 @@
 const projects = [
   {
     imgsrc: "../assets/img/manage.png",
-    title: "Manage Landpage Page",
+    title: "Manage Landing Page",
     livedemo: "https://moeeza3.github.io/Manage-Landing-Page/",
     category: {
       id: 1,
